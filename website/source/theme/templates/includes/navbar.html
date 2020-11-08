@@ -1,0 +1,30 @@
+<nav class="navbar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="{{ SITEURL }}/"><img
+                    alt="{{ SITENAME }}"
+                    src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/csminds_logo_sm.png"
+                    class="logo">
+            </a>
+            <button type="button" class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target=".navbar-collapse" aria-expanded="false"
+            aria-controls="navbar-collapse" id="navButton">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-menu-hamburger" style="font-size: 25px;"></span>
+            </button>
+        </div>
+        
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-right nav-pills my-navbar">
+                <!--For nested nav bar-->
+                {% for item in MENUITEMS %}
+                    <li class="navbar-item" {% if link == output_file %}
+                        class="active"{% endif %}>
+                        <a href="{{ item.link }}"><b>{{ item.title }}</b></a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</nav>

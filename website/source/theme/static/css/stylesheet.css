@@ -1,0 +1,514 @@
+/** Colors Used
+ Navy: #1d1d2c
+ Grey: #f7f4e9
+ Red: #e40c2b
+ Blue: #3cbcc3
+ Yellow: #eba63f
+ Green: #438945
+**/
+
+body {
+    background-color: #1d1d2c;
+    padding-bottom: 60px;
+    font-size: 16px;
+}
+
+p {
+    text-align: justify;
+    color: #1d1d2c;
+}
+
+#container {
+    padding-top: 25px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 90%;
+}
+
+.navbar ul {
+    padding-left: 2%;
+    padding-top: 5px;
+}
+
+.navbar {
+    padding: 5px 5% 5px 5%;
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #f7f4e9;
+}
+
+.navbar a {
+    color: #1d1d2c;
+    padding: 0;
+}
+
+.my-navbar > li > a:focus,
+.my-navbar > li > a:hover {
+    background-color: #3cbcc3;
+    border-radius: 20px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.htitle {
+    margin: 0 0 25px 0;
+    color: #eba63f;
+}
+
+#my-carousel {
+    padding: 0;
+    background-color: #1d1d2c;
+}
+
+/* carousel */
+#quote-carousel {
+    padding: 0;
+    margin: 0;
+}
+
+.corners {
+    border-radius: 20px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control {
+    background: none;
+    color: #1d1d2c;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-bottom: 30px;
+    width: 10%;
+}
+
+/* Previous button  */
+#quote-carousel .carousel-control.left {
+    left: -12px;
+}
+
+/* Next button  */
+#quote-carousel .carousel-control.right {
+    right: -12px !important;
+}
+
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0;
+    margin-right: -19px;
+}
+
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li {
+    background: #f7f4e9;
+}
+
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+}
+
+.page-desc {
+    padding: 3% 5% 0 5%;
+}
+
+.home {
+    background-color: #f7f4e9;
+}
+
+.about {
+    background-color: #eba63f;
+}
+
+.btn-about {
+    border-radius: 10px;
+    color: #1d1d2c;
+    background-color: #438945;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-about:focus,
+.btn-about:hover {
+    color: #438945;
+    background-color: #1d1d2c;
+}
+
+.tutorials {
+    background-color: #e40c2b;
+}
+
+.btn-tutorials {
+    border-radius: 10px;
+    color: #1d1d2c;
+    background-color: #eba63f;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-tutorials:focus,
+.btn-tutorials:hover {
+    color: #eba63f;
+    background-color: #1d1d2c;
+}
+
+.btn-myths {
+    border-radius: 10px;
+    color: #1d1d2c;
+    background-color: #3cbcc3;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-myths:focus,
+.btn-myths:hover {
+    color: #3cbcc3;
+    background-color: #1d1d2c;
+}
+
+.events {
+    background-color: #3cbcc3;
+}
+
+.btn-events {
+    border-radius: 10px;
+    color: #1d1d2c;
+    background-color: #e40c2b;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-events:focus,
+.btn-events:hover {
+    color: #e40c2b;
+    background-color: #1d1d2c;
+}
+
+.winstem {
+    background-color: #438945;
+}
+
+.btn-winstem {
+    border-radius: 10px;
+    color: #1d1d2c;
+    background-color: #eba63f;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-winstem:focus,
+.btn-winstem:hover {
+    color: #eba63f;
+    background-color: #1d1d2c;
+}
+
+/* End carousel */
+
+.rfindex {
+    margin-bottom: 25px;
+}
+
+/** About (Tabs) Page **/
+.atitle {
+    margin: 0 0 15px 0;
+    color: #eba63f;
+}
+
+.about-tabs {
+    background-color: #1d1d2c;
+    box-shadow: none;
+}
+
+.nav-pills > li.active > a {
+    background-color: #eba63f;
+    color: #1d1d2c;
+    border-radius: 20px;
+}
+
+.nav-pills > li > a {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+    background-color: #eba63f;
+    color: #1d1d2c;
+    border-radius: 20px;
+}
+
+.nav-pills > li > a {
+    font-size: 1.7rem;
+    border-radius: 20px;
+}
+
+.nav-about > li > a {
+    color: #eba63f;
+}
+
+.nav-about > li > a:focus,
+.nav-about > li > a:hover {
+    background-color: #3cbcc3;
+    color: #1d1d2c;
+}
+
+.tab-content {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.tab-row {
+    padding: 20px;
+    margin-top: 15px;
+    background-color: #f7f4e9;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.about-desc {
+    padding: 5% 7% 0 7%;
+}
+
+.about-desc-spec {
+    padding: 5% 10% 5% 10%;
+}
+
+.about-desc-top {
+    padding: 3% 7% 3% 7%;
+}
+
+.winstem-desc {
+    padding: 5% 3% 0 3%;
+}
+
+.winstem-desc-spec {
+    padding: 1% 5% 1% 5%;
+}
+
+/** Myths Page **/
+.panel-group {
+    background: #1d1d2c none repeat scroll 0 0;
+    margin-bottom: 0;
+    padding: 10px;
+}
+
+#accordion .panel,
+#accordion2 .panel {
+    background: #1d1d2c;
+    border: medium none;
+    border-radius: 20px;
+    box-shadow: none;
+    margin: 0 0 20px 0;
+}
+
+#accordion .panel-heading,
+#accordion2 .panel-heading {
+    background: #1d1d2c;
+    border-radius: 20px;
+    padding: 0;
+}
+
+#accordion .panel-title a,
+#accordion2 .panel-title a {
+    background: #3cbcc3 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    color: #1d1d2c;
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px 12px 50px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+#accordion .panel-title a.collapsed,
+#accordion2 .panel-title a.collapsed {
+    background: #f7f4e9 none repeat scroll 0 0;
+    border: 1px solid #f7f4e9;
+    color: #1d1d2c;
+}
+
+#accordion .panel-title a.collapsed:hover,
+#accordion2 .panel-title a.collapsed:hover {
+    background: #438945 none repeat scroll 0 0;
+    border: 1px solid #438945;
+}
+
+#accordion .panel-title a::after, #accordion .panel-title a.collapsed::after,
+#accordion2 .panel-title a::after, #accordion2 .panel-title a.collapsed::after {
+    background: #3cbcc3 none repeat scroll 0 0;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.58);
+    color: #1d1d2c;
+    content: "";
+    font-family: fontawesome;
+    font-size: 25px;
+    height: 55px;
+    left: -20px;
+    line-height: 55px;
+    position: absolute;
+    text-align: center;
+    top: -5px;
+    transition: all 0.3s ease 0s;
+    width: 55px;
+}
+
+#accordion .panel-title a.collapsed::after,
+#accordion2 .panel-title a.collapsed::after {
+    background: #438945 none repeat scroll 0 0;
+    border: 2px solid #1d1d2c;
+    box-shadow: none;
+    color: #1d1d2c;
+    content: "";
+}
+
+#accordion .panel-body,
+#accordion2 .panel-body {
+    background: transparent none repeat scroll 0 0;
+    border-top: medium none;
+    padding: 1% 15px 2% 15px;
+    position: relative;
+}
+
+#accordion .panel-body .myth-dash,
+#accordion2 .panel-body .myth-dash {
+    background-color: #f7f4e9;
+    padding: 2%;
+    border-radius: 20px;
+}
+
+.bios {
+    margin-top: 10px;
+    padding: 0;
+}
+
+.bios #accordion,
+.bios #accordion2 {
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.center-contact {
+    justify-content: center;
+    padding-top: 10rem;
+    padding-bottom: 5rem;
+}
+
+.footer {
+    background-color: #f7f4e9;
+    padding: 5px 6% 5px 5%;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 20px 0 0 0;
+    border-color: #1d1d2c;
+}
+
+.foot-img {
+    width: 100px;
+    height: 50px;
+    border-radius: 0;
+    margin-left: 40px;
+}
+
+.logo-caro {
+    width: 50%;
+}
+
+.event-panel {
+    background-color: #f7f4e9;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 20px;
+}
+
+.event-panel .panel-body {
+    padding: 2%;
+}
+
+.event-panel .panel-body > img {
+    object-fit: cover;
+}
+
+#navButton{
+    color:#000;
+}
+
+.activity-head {
+    background-color: #1d1d2c;
+    color: #eba63f;
+}
+
+.activity-head > h3 {
+    margin:0;
+}
+
+.activity-panel {
+    background-color: #f7f4e9;
+    border-radius: 20px;
+}
+
+.activity-panel .panel-body {
+    padding: 20px;
+}
+
+.list-group {
+    margin-bottom: 0;
+}
+
+a.list-group-item {
+    background-color: #f7f4e9;
+    color: #1d1d2c;
+}
+
+a.list-group-item:hover,
+a.list-group-item:focus {
+    background-color: #3cbcc3;
+    color: #1d1d2c;
+}
+
+.art-head {
+    margin-top: 0;
+}
+
+.article-summary p > img {
+    width: 50%;
+    margin-left: 25%;
+}
+
+.article-summary p {
+    margin: 0;
+}
+
+.article-summary a {
+    margin-top: 10px;
+}
+
+.article-summary p > span > iframe {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+}
+
+.article-summary h1,
+.article-summary h2 {
+    margin-top: 0;
+}
+
+.art-summary p > img {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.art-summary p > span > iframe {
+    width: 80%;
+    margin-left: 10%;
+}

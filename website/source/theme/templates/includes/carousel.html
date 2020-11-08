@@ -1,0 +1,137 @@
+<div class="carousel slide" data-ride="carousel" id="quote-carousel">
+    <!-- Bottom Carousel Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#quote-carousel" data-slide-to="1"></li>
+        <li data-target="#quote-carousel" data-slide-to="2"></li>
+        <li data-target="#quote-carousel" data-slide-to="3"></li>
+        <li data-target="#quote-carousel" data-slide-to="4"></li>
+        <li data-target="#quote-carousel" data-slide-to="5"></li>
+    </ol>
+
+    <!-- Carousel Slides / Quotes -->
+    <div class="carousel-inner corners">
+        <!-- Quote 1 -->
+        <div class="item home active">
+            <div class="row">
+                <div class="col-lg-6 text-center page-desc">
+                    <h3>
+                        CS Minds is your gateway to <br/> computer science.
+                    </h3>
+                    <h4>Presented to you by:</h4>
+                    <img class="logo-caro" alt="Maynooth University Logo"
+                         src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/MU.png">
+                    <h4>Department of Computer Science</h4>
+                </div>
+                <div class="col-lg-6">
+                    <img alt="{{ SITENAME }}"
+                         src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/home.png">
+                </div>
+            </div>
+        </div>
+        <!-- Quote 2 -->
+        <div class="item about">
+            <div class="row">
+                <div class="col-lg-6 text-center page-desc">
+                    <h3>About Computer Science</h3>
+                    <br/>
+                    <h4>What is computer science?</h4>
+                    <h4>Is computer science for me?</h4>
+                    <br/>
+                    <a href="{{ SITEURL }}/about.html" class="btn .btn-lg btn-about" role="button"><h4><b>Find out more
+                        about computer science</b></h4></a>
+                </div>
+                <div class="col-lg-6">
+                    <img alt="{{ SITENAME }}"
+                         src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/about.png">
+                </div>
+            </div>
+        </div>
+        <!-- Quote 3 -->
+        <div class="item events">
+            <div class="row">
+                <div class="col-lg-6 text-center page-desc">
+                    <h3>Computer Science Events</h3>
+                    <br/>
+                    <h4>See what is happening at Maynooth University</h4>
+                    <br/>
+                    <a href="{{ SITEURL }}/events.html"
+                       class="btn .btn-lg btn-events"
+                       role="button"><h4><b>Find out about our events</b></h4>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <img alt="{{ SITENAME }}"
+                         src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/events.png">
+                </div>
+            </div>
+        </div>
+        <!-- Quote 4 -->
+        <div class="item about">
+            <div class="row">
+                <div class="col-lg-6 text-center page-desc">
+                    <h3>Computer Science Myths</h3>
+                    <br/>
+                    <h4>Many people wrongly believe that computer science<br/>
+                        isn't for them, for reasons such as they're female or<br/>
+                        not great at the particular maths taught in secondary school.</h4>
+                    <br/>
+                    <a href="{{ SITEURL }}/cs-myths.html"
+                       class="btn .btn-lg btn-myths"
+                       role="button"><h4><b>Read more myths</b></h4></a>
+                </div>
+                <div class="col-lg-6">
+                    <img alt="{{ SITENAME }}"
+                         src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/myths.png">
+                </div>
+            </div>
+        </div>
+        <!-- Quote 5 -->
+        <div class="item tutorials">
+            <div class="row">
+                <div class="col-lg-6 text-center page-desc">
+                    <h3>Computer Science Activities</h3>
+                    <br/>
+                    <h4>Gain new skills in a range of areas such as <br/>Java
+                        and Python through Snap!, <br/>3D modelling with Blender, and
+                        <br/>virtual reality with Glitch and A Frame.</h4>
+                    <br/>
+                    <a href="{{ SITEURL }}/activities.html"
+                       class="btn .btn-lg btn-tutorials"
+                       role="button"><h4><b>Try an activity</b></h4></a>
+                </div>
+                <div class="col-lg-6">
+                    <img alt="{{ SITENAME }}"
+                         src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/tutorials.png">
+                </div>
+            </div>
+        </div>
+        <!-- Quote 6 -->
+        <div class="item winstem">
+            <div class="row">
+                <div class="col-lg-6 text-center page-desc">
+                    <h3>Women in STEM</h3>
+                    <br/>
+                    <h4>Hear from women in Maynooth University,<br/>
+                        learn about what they do, and<br/>
+                        learn about some famous faces.</h4>
+                    <br/>
+                    <a href="{{ SITEURL }}/women-in-cs.html"
+                       class="btn .btn-lg btn-winstem"
+                       role="button"><h4><b>Learn more about women in STEM</b></h4>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <img alt="{{ SITENAME }}"
+                         src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/img/winstem.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carousel Buttons Next/Prev -->
+    <a data-slide="prev" href="#quote-carousel" class="left carousel-control">
+        <i class="glyphicon glyphicon-chevron-left"></i></a>
+    <a data-slide="next" href="#quote-carousel" class="right carousel-control">
+        <i class="glyphicon glyphicon-chevron-right"></i></a>
+</div>

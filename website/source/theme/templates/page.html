@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }}{% endblock %}
+
+{% block content %}
+    {% if output_file == 'about.html' %}
+        {% include 'includes/about.html' %}
+    {% elif output_file == 'activities.html' %}
+        {% include 'includes/activities.html' %}
+    {% elif output_file == 'events.html' %}
+        {% include 'includes/events.html' %}
+    {% elif output_file == 'cs-myths.html' %}
+        {% include 'includes/cs-myths.html' %}
+    {% elif output_file == 'women-in-cs.html' %}
+        {% include 'includes/women-in-cs.html' %}
+    {% elif output_file == 'contact-us.html' %}
+        {% include 'includes/contact-us.html' %}
+    {% else %}
+        <div class="row">
+            <div class="col-md-12"> <!-- Just have a look at this for the future -->
+                {{ page.content }}
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

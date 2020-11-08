@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="section-title text-center">
+                <h1 class="atitle">{{ category }}</h1>
+            </div>
+        </div>
+    </div>
+    {% if articles %}
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="panel panel-default activity-panel">
+                    <div class="panel-body">
+                        <h3 class="text-center art-head">Activity List</h3>
+                        <div class="list-group">
+                            {% for article in (articles_page.object_list |sort(attribute='Sortorder')) %}
+                                <a href="{{ SITEURL }}/{{ article.url }}" class="list-group-item"><b>{{ article.series_index }}. {{ article.title }}</b></a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                {% for article in (articles_page.object_list |sort(attribute='Sortorder')) %}
+                    <div class="row">
+                        <div class="panel-heading activity-head">
+                            <h3 class="art-head">{{ article.series_index }}. {{ article.title }}</h3>
+                        </div>
+                        <div class="panel panel-default activity-panel">
+                            <div class="panel-body article-summary">
+                                <p>{{ article.summary }}</p>
+                                <a href="{{ SITEURL }}/{{ article.url }}" class="btn btn-block btn-tutorials" role="button"><b>Continue Activity...</b></a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+{% endblock content %}

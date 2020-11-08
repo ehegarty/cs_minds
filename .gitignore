@@ -1,0 +1,21 @@
+/venv/
+.idea/.gitignore
+.idea/cs-minds.iml
+.idea/inspectionProfiles/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/dictionaries/
+.idea/workspace.xml
+venv/
+
+
+
+/website/output/
+/website/source/output/
+
+# Python related ignores
+*.pyc
+__pycache__/
+
+

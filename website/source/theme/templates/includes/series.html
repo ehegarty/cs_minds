@@ -1,0 +1,22 @@
+{% if article.series %}
+    <div class="panel panel-default activity-panel">
+        <div class="panel-body">
+            {% if article.series.all_previous %}
+               <h4><b>Previous activity</b></h4>
+               <div class="list-group">
+                    {% for article in article.series.all_previous %}
+                        <a href="{{ SITEURL }}/{{ article.url }}" class="list-group-item"><b>{{ article.series_index }}. {{ article.title }}</b></a>
+                    {% endfor %}
+               </div>
+            {% endif %}
+            {% if article.series.all_next %}
+                <h4><b>Next activity</b></h4>
+                <div class="list-group">
+                     {% for article in article.series.all_next %}
+                         <a href="{{ SITEURL }}/{{ article.url }}" class="list-group-item"><b>{{ article.series_index }}. {{ article.title }}</b></a>
+                     {% endfor %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+{% endif %}
